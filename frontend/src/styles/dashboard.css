@@ -1,0 +1,132 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: #1b5e20;
+  color: white;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -270px;
+  width: 250px;
+  height: 100%;
+  background: white;
+  transition: 0.5s;
+  padding: 10px;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.weather {
+  padding: 12px;
+  background: #e8f5e9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.field-scroll {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;       /* Firefox */
+}
+
+.field-scroll::-webkit-scrollbar {
+  display: none;               /* Chrome / Safari */
+}
+
+.field-scroll::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 40px;
+  pointer-events: none;
+  background: linear-gradient(to right, transparent, rgba(0,0,0,0.1));
+}
+
+
+.field-card {
+  min-width: 260px;
+  background: white;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.ph-box {
+  background: #f1f8e9;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.pump-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
+.pump-btn.on { background: green; }
+.pump-btn.off { background: red; }
+
+.timeline {
+  margin: 12px;
+  padding: 12px;
+  background: white;
+  border-radius: 12px;
+}
+
+.timeline-bar {
+  height: 6px;
+  background: linear-gradient(to right, green, yellow, red);
+  border-radius: 6px;
+}
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  background-color: #D9F5CE;
+  border-radius: 29px;
+  padding: 10px;
+}
+
+.menu-links a.active {
+  font-weight: bold;
+  color: #d5ffd8;
+  font-size: 16px;
+  background-color: #38552c;
+  border-radius: 31px;
+  padding: 10px;
+
+}

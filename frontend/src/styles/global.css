@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f3f5f7;
+}
+
+.page {
+  max-width: 420px;
+  margin: auto;
+}
